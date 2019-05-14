@@ -14,7 +14,7 @@ The config file has two parts as source and target. Source is for backup and Tar
 
 If you have another config file, pass as an arguments as below -
  
-- python mongodump.py -config <configfile>
+- python mongodump.py -config configfile
 
 Take backup of all databases by keeping the database element empty in config file -
 
