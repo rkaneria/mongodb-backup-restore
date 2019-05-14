@@ -1,0 +1,28 @@
+{
+	"servers":{
+    "arguments": [ "host", "port", "username", "password", "authenticationDatabase" ],
+		"source":{
+			"host": "10.248.140.86",
+			"port": "27017",
+      "username": "siteRootAdmin",
+      "password": "some-initial-password",
+      "authenticationDatabase": "admin",
+      "databases": ["mcm_google_service","mcmakler_v2_int1.Application.Appointment"]
+		},
+		"target":{
+			"host": "mongodb-3h18-stage.mcmakler.com",
+			"port": "27017",
+			"username": "mongo-admin",
+			"password":"juutAi8vq7inVBxcBTfHffWMXtgwlJoT",
+      "authenticationDatabase": "admin",
+      "databases": [],
+      "collections": []
+		}
+	},
+	"programs":{
+		"dump":"/usr/local/bin/mongodump",
+		"restore":"/usr/local/bin/mongorestore"
+	},
+	"output":"/Users/rkaneria/Desktop/backup/db/{$today:%Y%m%d_%H%M}",
+  "backupdir": "/Users/rkaneria/Desktop/backup/db/20190503_1409"
+}
