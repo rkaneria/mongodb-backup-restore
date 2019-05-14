@@ -16,6 +16,10 @@ If you have another config file, pass as an arguments as below -
  
 - python mongodump.py -config configfile
 
+## Config file
+
+# Backup 
+
 Take backup of all databases by keeping the database element empty in config file -
 
 - "databases": []
@@ -27,6 +31,8 @@ Take backup of specific database by giving database names in config file -
 Take backup of specific collectios of a database by using below syntax in config file -
 
 - "databases": [ "db1.collection1.collection2", "db2.collection1", "db3" ]
+
+# Restore
 
 Mention database backup directory path of your local machine, to restore whole database from the same. 
 
