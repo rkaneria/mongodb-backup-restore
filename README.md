@@ -28,7 +28,7 @@ Take backup of specific database by giving database names in config file -
 
 - "databases": [ "db1", "db2", "db3" ]
 
-Take backup of specific collectios of a database by using below syntax in config file -
+Take backup of specific collections of a database by using below syntax in config file -
 
 - "databases": [ "db1.collection1.collection2", "db2.collection1", "db3" ]
 
