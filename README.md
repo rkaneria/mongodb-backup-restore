@@ -18,7 +18,7 @@ If you have another config file, pass as an arguments as below -
 
 ## Config file
 
-# Backup 
+### Backup 
 
 Take backup of all databases by keeping the database element empty in config file -
 
@@ -32,7 +32,7 @@ Take backup of specific collectios of a database by using below syntax in config
 
 - "databases": [ "db1.collection1.collection2", "db2.collection1", "db3" ]
 
-# Restore
+### Restore
 
 Mention database backup directory path of your local machine, to restore whole database from the same. 
 
