@@ -90,5 +90,5 @@ if len(database) == 0:
     run_command(popenCmd)
 else:
     for i in range(len(database)):
-        popenCmd = command + str.format(' --db {} {}/{} --drop', database[i], config['backupdir'], database[i])
+        popenCmd = command + str.format(' --db {} {}/{} --noIndexRestore --drop', database[i], config['backupdir'], database[i])
         run_command(popenCmd)  
