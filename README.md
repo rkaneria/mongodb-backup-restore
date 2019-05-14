@@ -22,11 +22,11 @@ Take backup of all databases by keeping the database element empty in config fil
 
 Take backup of specific database by giving database names in config file - 
 
-- "databases": ["db1","db2","db3"]
+- "databases": [ "db1", "db2", "db3" ]
 
 Take backup of specific collectios of a database by using below syntax in config file -
 
-- "databases": ["db1.collection1.collection2","db2.collection1","db3"]
+- "databases": [ "db1.collection1.collection2", "db2.collection1", "db3" ]
 
 Mention database backup directory path of your local machine, to restore whole database from the same. 
 
