@@ -86,9 +86,9 @@ out_dict = {'$today': datetime.datetime.now()}
 popenCmd = ''
 database = get_databases(serverTarget)
 if len(database) == 0:
-    popenCmd = command + str.format(' {} --noIndexRestore --drop', config['backupdir'])
+    popenCmd = command + str.format(' {} --noIndexRestore', config['backupdir'])
     run_command(popenCmd)
 else:
     for i in range(len(database)):
-        popenCmd = command + str.format(' --db {} {}/{} --noIndexRestore --drop', database[i], config['backupdir'], database[i])
+        popenCmd = command + str.format(' --db {} {}/{} --noIndexRestore', database[i], config['backupdir'], database[i])
         run_command(popenCmd)  
